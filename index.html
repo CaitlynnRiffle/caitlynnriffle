@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caitlynn Riffle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid-overlay"></div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Caitlynn Riffle</a>
+      <nav class="nav-links"><a href="projects.html">Projects</a><a href="about.html">About</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <video class="hero-video" id="hero-video" autoplay muted playsinline preload="auto">
+        <source src="assets/animation/CaityPortAniation.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay">
+        <div class="hero-overlay-content container">
+          <h1>Caitlynn Riffle</h1>
+          <p class="sub">Residential Drafter</p>
+          <a class="cta-link" href="projects.html">Enter Portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      const video = document.getElementById('hero-video');
+      const overlay = document.querySelector('.hero-overlay');
+      if (!video || !overlay) return;
+
+      const revealOverlay = () => {
+        overlay.classList.add('is-visible');
+      };
+
+      overlay.classList.remove('is-visible');
+      video.removeAttribute('loop');
+      video.addEventListener('ended', revealOverlay, { once: true });
+    })();
+  </script>
+  <script src="scripts/back-to-top.js"></script>
+</body>
+</html>

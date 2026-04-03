@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project | Caitlynn Riffle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid-overlay"></div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Caitlynn Riffle</a>
+      <nav class="nav-links"><a id="nav-back-link" href="projects.html">Back</a><a href="about.html">About</a></nav>
+    </div>
+  </header>
+
+  <main class="container section project-layout">
+    <aside class="spec-sidebar">
+      <p class="label">PROJECT SPECS</p>
+      <h1 id="title"></h1>
+      <p id="meta" class="meta"></p>
+      <div id="specs" class="specs"></div>
+      <a id="sidebar-back-link" class="sidebar-link" href="projects.html">&#8592; Back</a>
+    </aside>
+
+    <section class="plan-viewer fade-section" aria-label="Project plan viewer">
+      <div class="plan-stage">
+        <img id="active-sheet" class="sheet active-sheet" alt="Project plan" data-modal-controls="#viewer-controls" />
+        <div class="viewer-controls" id="viewer-controls" aria-label="Plan layers">
+          <button type="button" class="viewer-btn active" data-sheet="foundation">Foundation</button>
+          <button type="button" class="viewer-btn" data-sheet="floor">Main Floor</button>
+          <button type="button" class="viewer-btn" data-sheet="roof">Roof</button>
+          <button type="button" class="viewer-btn" data-sheet="elevation">Elevation</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="scripts/plan-modal.js"></script>
+  <script src="project.js"></script>
+  <script src="scripts/back-to-top.js"></script>
+</body>
+</html>
