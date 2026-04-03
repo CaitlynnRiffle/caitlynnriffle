@@ -67,9 +67,9 @@ main,header{position:relative;z-index:1}
 .about-card{padding:28px}
 .about-grid{display:grid;gap:24px;align-items:start}
 .about-sidebar{display:grid;gap:18px}
-.portrait-frame{aspect-ratio:4/5;padding-bottom:80%;border:1px solid rgba(111,143,175,.34);background:#1d1e21;overflow:hidden}
-.portrait-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
-.portrait-placeholder{aspect-ratio:4/5;padding-bottom:80%;display:grid;place-items:center;border:1px solid rgba(111,143,175,.34);background:linear-gradient(180deg,rgba(56,76,103,.22),rgba(24,24,25,.86));color:var(--warm);font-family:Sora,sans-serif;font-size:2rem;font-size:clamp(2rem,8vw,4.5rem);letter-spacing:.08em}
+.portrait-frame{aspect-ratio:4/5;border:1px solid rgba(111,143,175,.34);background:#1d1e21;overflow:hidden}
+.portrait-photo{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.portrait-placeholder{aspect-ratio:4/5;display:grid;place-items:center;border:1px solid rgba(111,143,175,.34);background:linear-gradient(180deg,rgba(56,76,103,.22),rgba(24,24,25,.86));color:var(--warm);font-family:Sora,sans-serif;font-size:2rem;font-size:clamp(2rem,8vw,4.5rem);letter-spacing:.08em}
 .about-contact{border:1px solid rgba(56,76,103,.48);background:#1d1e21;padding:16px}
 .about-contact .social-links{justify-content:flex-start}
 .about-copy{text-align:left}
